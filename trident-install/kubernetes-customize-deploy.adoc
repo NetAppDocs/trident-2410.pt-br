@@ -122,7 +122,7 @@ NOTE: Para obter mais informações sobre a formatação dos parâmetros do pod,
 
 === Detalhes sobre Force Detach
 
-O Force Detach está disponível apenas para `ontap-san`, `ontap-san-economy` e `onatp-nas-economy` . Antes de ativar a desconexão forçada, o desligamento do nó (NGNS) não gracioso deve ser ativado no cluster do Kubernetes. Para obter mais informações, link:https://kubernetes.io/docs/concepts/architecture/nodes/#non-graceful-node-shutdown["Kubernetes: Desligamento do nó não gracioso"^]consulte .
+A força de desprendimento está disponível para `ontap-san` , `ontap-san-economy` e `ontap-nas-economy` apenas.  Antes de habilitar a desconexão forçada, o desligamento não normal do nó (NGNS) deve ser habilitado no cluster do Kubernetes. Para mais informações, consulte link:https://kubernetes.io/docs/concepts/architecture/nodes/#non-graceful-node-shutdown["Kubernetes: Desligamento do nó não gracioso"^] .
 
 
 NOTE: Ao usar `ontap-nas-economy` o driver, você precisa definir o `autoExportPolicy` parâmetro na configuração de back-end `true` para que o Trident possa restringir o acesso do nó Kubernetes com a alteração aplicada usando políticas de exportação gerenciadas.
