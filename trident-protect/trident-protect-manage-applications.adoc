@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: trident-protect/trident-protect-manage-applications.html 
 keywords: appvault, data protection, custom resource, namespace, application, cluster 
-summary: Você pode tornar o Trident Protect ciente de um aplicativo que deseja gerenciar criando um CR de aplicativo e um CR de AppVault associado. 
+summary: 'Você pode fazer com que o Trident Protect reconheça um aplicativo que deseja gerenciar criando um CR (Create Request) para o aplicativo e um CR associado para o AppVault.' 
 ---
-= Defina um aplicativo para gerenciamento com o Trident Protect
+= Defina uma aplicação para gestão com o Trident Protect.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,19 +14,19 @@ summary: Você pode tornar o Trident Protect ciente de um aplicativo que deseja 
 
 
 [role="lead"]
-Você pode definir um aplicativo que deseja gerenciar com o Trident Protect criando um CR de aplicativo e um CR de AppVault associado.
+Você pode definir um aplicativo que deseja gerenciar com o Trident Protect criando um CR (Create Request) de aplicativo e um CR do AppVault associado.
 
 
 
 == Crie um AppVault CR
 
-Você precisa criar um AppVault CR que será usado ao executar operações de proteção de dados no aplicativo, e o AppVault CR precisa residir no cluster onde o Trident Protect está instalado. O AppVault CR é específico para o seu ambiente; para exemplos do AppVault CRS, consulte link:trident-protect-appvault-custom-resources.html["Recursos personalizados do AppVault."]
+Você precisa criar um AppVault CR que será usado ao executar operações de proteção de dados no aplicativo, e o AppVault CR precisa residir no cluster onde o Trident Protect está instalado. O pedido de configuração (CR) do AppVault é específico para o seu ambiente; para exemplos de pedidos de configuração do AppVault, consulte [link para a documentação].link:trident-protect-appvault-custom-resources.html["Recursos personalizados do AppVault."]
 
 
 
 == Definir uma aplicação
 
-Você precisa definir cada aplicativo que deseja gerenciar com o Trident Protect. Você pode definir um aplicativo para gerenciamento criando manualmente um CR de aplicativo ou usando a CLI Trident Protect.
+Você precisa definir cada aplicativo que deseja gerenciar com o Trident Protect. Você pode definir um aplicativo para gerenciamento criando manualmente uma solicitação de configuração (CR) do aplicativo ou usando a CLI do Trident Protect.
 
 [role="tabbed-block"]
 ====
