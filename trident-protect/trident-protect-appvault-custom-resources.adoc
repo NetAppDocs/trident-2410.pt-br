@@ -18,12 +18,14 @@ O recurso personalizado (CR) do bucket para o Trident Protect é conhecido como 
 
 
 
+[[key-generation-and-appvault-definition-examples]]
 == Geração de chaves e exemplos de definição do AppVault
 
 Ao definir um AppVault CR, você precisa incluir credenciais para acessar os recursos hospedados pelo provedor. A forma como você gera as chaves para as credenciais será diferente dependendo do provedor. A seguir estão exemplos de geração de chaves de linha de comando para vários provedores, seguidos de exemplos de definições do AppVault para cada provedor.
 
 
 
+[[key-generation-examples]]
 === Principais exemplos de geração
 
 Você pode usar os exemplos a seguir para criar chaves para as credenciais de cada provedor de nuvem.
@@ -75,6 +77,7 @@ kubectl create secret generic  <secret-name> --from-literal=accessKeyID=<objects
 ====
 
 
+[[appvault-cr-examples]]
 === Exemplos do AppVault CR
 
 Você pode usar os exemplos CR a seguir para criar objetos AppVault para cada provedor de nuvem.
@@ -232,6 +235,7 @@ spec:
 ====
 
 
+[[appvault-creation-examples-using-the-trident-protect-cli]]
 === Exemplos de criação do AppVault usando a CLI do Trident Protect
 
 Você pode usar os seguintes exemplos de comandos CLI para criar o AppVault CRS para cada provedor.
@@ -283,6 +287,7 @@ tridentctl-protect create vault StorageGridS3 s3vault --bucket <bucket-name> --s
 ====
 
 
+[[use-the-appvault-browser-to-view-appvault-information]]
 == Use o navegador AppVault para exibir informações do AppVault
 
 Você pode usar o plugin Trident Protect CLI para visualizar informações sobre os objetos do AppVault que foram criados no cluster.
@@ -322,6 +327,7 @@ O nome do cluster na primeira coluna da tabela só estará disponível se um nom
 
 
 
+[[remove-an-appvault]]
 == Remova um AppVault
 
 Você pode remover um objeto AppVault a qualquer momento.

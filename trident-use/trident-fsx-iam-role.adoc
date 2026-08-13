@@ -19,6 +19,7 @@ NOTE: Para autenticar usando uma função do AWS IAM, você deve ter um cluster 
 
 
 
+[[create-aws-secret-manager-secret]]
 == Crie o segredo do AWS Secret Manager
 
 Este exemplo cria um segredo do AWS Secret Manager para armazenar credenciais do Trident CSI:
@@ -30,6 +31,7 @@ aws secretsmanager create-secret --name trident-secret --description "Trident CS
 ----
 
 
+[[create-iam-policy]]
 == Criar política do IAM
 
 Os exemplos a seguir criam uma política do IAM usando a AWS CLI:
@@ -72,6 +74,7 @@ policy.json:
 ----
 
 
+[[create-an-iam-role-for-the-service-account]]
 === Crie uma função do IAM para a conta de serviço
 
 [role="tabbed-block"]

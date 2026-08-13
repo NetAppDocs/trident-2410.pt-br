@@ -28,12 +28,14 @@ Usando o recurso FC com Trident, você pode fazer o seguinte:
 
 
 
+[[prerequisites]]
 == Pré-requisitos
 
 Configure as configurações de rede e nó necessárias para FC.
 
 
 
+[[network-settings]]
 === Definições de rede
 
 . Obtenha o WWPN das interfaces de destino.  https://docs.netapp.com/us-en/ontap-cli//network-interface-show.html["mostra da interface de rede"^]Consulte para obter mais informações.
@@ -57,6 +59,7 @@ Consulte a seguinte documentação do ONTAP para obter detalhes:
 
 
 
+[[prepare-the-worker-node]]
 === Prepare o nó de trabalho
 
 Todos os nós de trabalho no cluster do Kubernetes precisam ser capazes de montar os volumes provisionados para os pods. Para preparar os nós de trabalho para FC, é necessário instalar as ferramentas necessárias.
@@ -133,14 +136,15 @@ sudo systemctl status multipath-tools
 ====
 
 
+[[create-a-backend-configuration]]
 == Crie uma configuração de back-end
 
 Crie um backend Trident para `ontap-san` o driver e `fcp` como sanType.
 
 Consulte:
 
-* link:..trident-use/ontap-san-prep.html["Prepare-se para configurar o back-end com drivers SAN ONTAP"]
-* link:..trident-use/ontap-san-examples.html["Exemplos e opções de configuração de SAN ONTAP"^]
+* link:ontap-san-prep.html["Prepare-se para configurar o back-end com drivers SAN ONTAP"]
+* link:ontap-san-examples.html["Exemplos e opções de configuração de SAN ONTAP"^]
 
 
 .Exemplo de configuração de back-end com FC
@@ -162,11 +166,12 @@ spec:
 ----
 
 
+[[create-a-storage-class]]
 == Crie uma classe de armazenamento
 
 Para obter mais informações, consulte:
 
-* link:..trident-docker/stor-config.html["Opções de configuração de armazenamento"^]
+* link:../trident-docker/stor-config.html["Opções de configuração de armazenamento"^]
 
 
 .Exemplo de classe de armazenamento
